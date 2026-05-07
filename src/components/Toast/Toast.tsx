@@ -24,7 +24,7 @@ export const Toast: React.FC<Props> = ({ text, onSetText, errorType }) => {
     }
   }, [text, onSetText]);
 
-  if (!setIsVisible && !text) {
+  if (!isVisible && !text) {
     return;
   }
 
